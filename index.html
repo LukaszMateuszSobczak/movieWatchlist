@@ -15,7 +15,7 @@
             href="https://fonts.gstatic.com"
             crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            href="https://fonts.googleapis.com/css2?fa0mily=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
             rel="stylesheet" />
 
         <link
@@ -32,21 +32,41 @@
             rel="stylesheet"
             href="./style/style.css" />
     </head>
+
     <body>
+        <nav
+            class="nav"
+            role="navigation">
+            <ul>
+                <li>
+                    <a
+                        href=""
+                        class="header-link"
+                        >Top of the top</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href=""
+                        class="header-link"
+                        >My watchlist</a
+                    >
+                </li>
+            </ul>
+        </nav>
+
         <header class="header">
-            <div class="header-text">
-                <h1 class="header-title">Find your film</h1>
-            </div>
-            <a
-                href=""
-                class="header-link"
-                >My watchlist</a
-            >
+            <h1 class="header-title">Find your film</h1>
             <form
-                action=""
+                action="#"
                 class="header-form">
                 <div class="search-box">
                     <i class="fa-solid fa-magnifying-glass"></i>
+                    <label
+                        for="movieTitleInput"
+                        class="visually-hidden"
+                        >Search for a movie</label
+                    >
                     <input
                         type="search"
                         name=""
@@ -57,11 +77,37 @@
             <div class="header-shadow"></div>
         </header>
 
-        <main class="main">
-            <div class="box">
+        <main class="main" id="movieContainer">
+            <!-- <div class="info-box">
                 <i class="fa-solid fa-film"></i>
                 <h2>Start Exploring</h2>
+            </div> -->
+
+            <div class="box">
+                <img
+                    src="https://m.media-amazon.com/images/M/MV5BNzA1Njg4NzYxOV5BMl5BanBnXkFtZTgwODk5NjU3MzI@._V1_FMjpg_UX1000_.jpg"
+                    class="movie-image"
+                    alt="" />
+                <div class="movie-info">
+                    <h3 class="movie-title">
+                        Blade runner <span class="movie-rating"><i class="fa-solid fa-star"></i>8.3</span>
+                    </h3>
+                    <div class="movie-additional-info">
+                        <p class="movie-length">117 min</p>
+                        <p class="movie-type">Action</p>
+                        <button class="movie-btn"><i class="fa-solid fa-square-plus"></i>Watchlist</button>
+                    </div>
+                    <p class="movie-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam possimus in rerum veritatis
+                        impedit quos praesentium nulla hic quisquam itaque.
+                    </p>
+                </div>
+                <div class="line"></div>
             </div>
+
+           
         </main>
+
+        <script src="./app.js"></script>
     </body>
 </html>
